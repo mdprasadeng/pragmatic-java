@@ -1,2 +1,4 @@
 rootProject.name = 'pragmatic-java'
 
+include 'collections'
+
