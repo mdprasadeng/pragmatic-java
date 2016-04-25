@@ -39,11 +39,13 @@ public class CollectionsTest {
   public void sort() {
     List<Integer> integers = Arrays.asList(4,1,5,3,2);
 
-    Collections.sort(integers);
+    //Collections.sort(integers);
     assertEquals(integers, Arrays.asList(1,2,3,4,5));
 
-    Collections.sort(integers, Collections.reverseOrder());
+    //Collections.sort(integers, Collections.reverseOrder());
     assertEquals(integers, Arrays.asList(5,4,3,2,1));
+
+    Collections.shuffle(integers);
 
     Collections.sort(integers, new Comparator<Integer>() {
       @Override
@@ -52,8 +54,6 @@ public class CollectionsTest {
       }
     });
     assertEquals(integers, Arrays.asList(2,4,1,3,5));
-
-
 
   }
 
