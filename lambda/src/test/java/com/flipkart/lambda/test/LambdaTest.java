@@ -20,7 +20,7 @@ public class LambdaTest {
       }
     };
 
-    assertEquals(Manipulator.apply(str, dotCom), "flipkart.com");
+    assertEquals("flipkart.com", Manipulator.apply(str, dotCom));
 
   }
 
@@ -29,7 +29,7 @@ public class LambdaTest {
     String str = "flipkart";
     StringManipulator dotCom = e -> e + ".com";
 
-    assertEquals(Manipulator.apply(str, dotCom), "flipkart.com");
+    assertEquals("flipkart.com", Manipulator.apply(str, dotCom) );
 
   }
 
@@ -37,7 +37,7 @@ public class LambdaTest {
   public void comparatorLambda() {
     List<Integer> integers = Arrays.asList(2,3,4,5,1);
     Collections.sort(integers, (a,b) -> a-b);
-    assertEquals(integers, Arrays.asList(1,2,3,4,5));
+    assertEquals(integers, Arrays.asList(5,4,3,2,1));
   }
 
 }
