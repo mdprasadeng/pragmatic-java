@@ -28,7 +28,7 @@ public class MapTest {
     expected.put("two", 3);
     expected.put("three", 1);
 
-    assertEquals(wordCountMap,  expected);
+    assertEquals(expected, wordCountMap);
 
   }
 
@@ -44,14 +44,14 @@ public class MapTest {
     }
 
 
-    assertEquals(wordCountMap.lastKey(),  "donut");
-    assertEquals(wordCountMap.firstKey(),  "apple");
+    assertEquals("donut", wordCountMap.lastKey());
+    assertEquals("apple", wordCountMap.firstKey());
 
     Map<String, Integer> expected = new HashMap<String, Integer>();
     expected.put("apple", 1);
     expected.put("banana", 2);
 
-    assertEquals(wordCountMap.headMap("candy"),  expected);
+    assertEquals(expected, wordCountMap.headMap("candy"));
 
   }
 }

@@ -39,21 +39,22 @@ public class CollectionsTest {
   public void sort() {
     List<Integer> integers = Arrays.asList(4,1,5,3,2);
 
-    //Collections.sort(integers);
-    assertEquals(integers, Arrays.asList(1,2,3,4,5));
+    Collections.sort(integers);
+    assertEquals( Arrays.asList(1,2,3,4,5), integers);
 
-    //Collections.sort(integers, Collections.reverseOrder());
-    assertEquals(integers, Arrays.asList(5,4,3,2,1));
+    Collections.sort(integers, Collections.reverseOrder());
+    assertEquals( Arrays.asList(5,4,3,2,1), integers);
 
     Collections.shuffle(integers);
 
     Collections.sort(integers, new Comparator<Integer>() {
       @Override
       public int compare(Integer o1, Integer o2) {
+        // 2 4 1 3 5
         return 0;
       }
     });
-    assertEquals(integers, Arrays.asList(2,4,1,3,5));
+    assertEquals( Arrays.asList(2,4,1,3,5), integers);
 
   }
 

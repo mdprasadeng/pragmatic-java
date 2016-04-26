@@ -7,6 +7,10 @@ import java.util.Set;
 
 public interface UserClient {
 
+  //Given ids returns corresponding users
+  List<User> fetchUsersById(List<String> userIds);
+
+
   //Mark given userIds as Inactive
   void markUsersInactive(Set<String> userIds);
 
@@ -16,7 +20,6 @@ public interface UserClient {
   //Fetch user with only requested details
   User fetchUserDetails(String userId, List<String> details);
 
-  //Given ids returns corresponding users
-  List<User> fetchUsersById(List<String> userIds);
+
 
 }
