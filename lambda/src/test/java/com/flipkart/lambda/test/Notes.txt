@@ -1,0 +1,20 @@
+Introduce Pure Function by Definition
+  #No external variables
+  #Doesn't manipulate arguments
+  #Output is always deterministic and thereby reproducable
+  #Doesn't nothing extra - no write to log etc
+
+Exercise to change test method into a pure function
+
+Benifits of Pure Functions
+    testable in isolation
+    parallelization
+    memorization
+    *laziness
+
+When to write pure functions?
+
+
+
+
+
