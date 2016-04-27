@@ -1,0 +1,3 @@
+This is a SAMPLE file
+In which SOME words ARE captilized for NO particular reason.
+THIS will be USED as SAMPLE for learning STREAMS AND collectors
