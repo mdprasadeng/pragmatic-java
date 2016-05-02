@@ -2,7 +2,7 @@ Introduce Pure Function by Definition
   #No external variables
   #Doesn't manipulate arguments
   #Output is always deterministic and thereby reproducable
-  #Doesn't nothing extra - no write to log etc
+  #Does nothing extra - write to log etc don't happen
 
 Exercise to change test method into a pure function
 
